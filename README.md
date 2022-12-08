@@ -1,154 +1,46 @@
-   # 1. 팀 소개
-   > 프로젝트 기간
-   > 2022.08.12 ~ 2022.8.26 <br>
+# 커머스 사이트 이솝을 모티브로한 팀 프로젝트
 
-
-   Usopp
-
-   |포지션|이름|담당|
-   |---|---|---|
-   |FRONT|김준호|로그인, footer|
-   |FRONT|소재현|nav bar, 제품상세페이지|
-   |FRONT|이빛나| 메인페이지, 제품상세페이지|
-   |BACK|류예린|장바구니 CRUD 구현.|
-   |BACK|이상우|로그인 & 회원가입 구현.|
-   |BACK|이상엽|사이트 페이지 구현.|
-
-# <br />
-
-
-
-
-
-## :: 구현 목표
-
-- 이솝 홈페이지 usefarams, map함수, props를 사용하여 UI구현 
-- 로그인 입력시 유효성 검사 함수에 따른 화면 구현 
-- 이메일 정보를 호출하여 DB에 없다면 메세지 출력과 회원가입으로 이동.
-- 이메일 정보 일치시 비밀번호 입력란 호버 출력.
-- 정규집에 맞는 아이디 및 비밀번호 일치시 게정 생성.
-- 메인 페이지 및 카테고리별, 상품별 페이지 구현.
-- 장바구니에 상품 담기, 삭제, 수량조절 구현.
-
-<br />
-
-## :: 구현 사항 설명
-
-1. 로그인 입력 데이터 유효성 검사 (프론트)
-
-- 입력창에 변화가 일어날 때 마다 유효성 검사 함수가 실행된다.
-- 유효성 검사 함수의 반환값(boolean)에 따라 버튼의 배경색과 disabled 속성이 변화한다.
-- 테스트 방법 : `/login` 페이지 이동 >>> 로그인 input 데이터 입력
-
-2. 장바구니 구현 (프론트)
-
-- 장바구니 추가 버튼 클릭시 데이터를 백엔드로 전달해서 장바구니로 다시전달 
-
-2. 로그인 데이터 처리 (백엔드)
-
-- 조건문과 정규식을 이용한 email과 password 유효성 검사를 진행
-- 유효섬 검사를 통과하지 못 할 경우 에러 메시지를 반환 예외 처리 구현
-
-3. 제품 페이지 구현 (백엔드)
-- 메인 페이지 단품 및 그룹 상품 동시 출력.
-- 카테고리별 상품 출력 구현.
-- 상품별 상세 페이지 구현.
-
-4. 장바구니 CRUD (백엔드)
-- 장바구니 생성 구현.
-- 장바구니 상품 조회 구현.
-- 장바구니 상품 개별 및 전체 삭제 구현.
-- 장바구니내의 수량 조절 구현.
-
-<br />
-
-## :: 성장 포인트 
-
-- 프론트엔드와 백엔드간의 소통의 중요성.
-- 프론트엔드와 백엔드 각 프로젝트 플로우 인지.
-- 각 분야별 DB처리 방식 및 통신 오류 요소 및 해결.
-- 
-<br />
-
-
-
-### 우리 서비스의 핵심 강점을 강조하여, 소개 문구를 작성합니다
-
-<aside>
-👉 소비자에게 소비를 유도하는 보기  편안한 직관적이고 깔끔한 UI 구성
-
-</aside>
-
-### 제공하는 메인 서비스를 소개해주세요
-
-<aside>
-소비자 구매 유도를 높일 수 있는 타입별 제품 추천 기능 및 제품 상세 안내
-
-</aside>
-
-# 3. 필수 구현 사항
-
-- 로그인 및 회원가입 구현.
-- 장바구니 CRUD 구현.
-- 제품 메인, 카테고리, 상세 페이지 구현.
-
-### 이번 프로젝트에서 꼭 구현하고 싶은 기능을 정리해주세요
-
-1. 사용자 회원가입 기능 
-2. 사용자 로그인 기능
-3. nav bar (카테고리)
-4. 상품 목록 페이지
-   - 필터링
-   - 정렬
-   - 페이지네이션
-5. 상품 상세 페이지
-6. 장바구니 기능
-  - 장바구니에 상품 추가 기능
-  - 장바구니에 추가된 상품 수정 기능
-  - 장바구니에 추가된 상품 조회 기능
-  - 장바구니에 추가된 상품 삭제 기능
-
-</aside>
-
-# 4. 추가 구현 사항
 
 ---
 
-### 핵심 기능 외에 추가적으로 구현하고 싶은 기능을 정리해주세요
+### 개발 인원 및 기간
+- 개발기간 : 2022년 8월 12일 ~ 2022년 8월 26일 (2주)
+- 개발인원 : 프론트엔드 3명, 백엔드 3명
+- 주관 기관 : 위코드
 
-<aside>
-👉 
-1. 검색 기능 </br>
-2. 사랑받는 제품 조회 </br>
-3. 상품 별점 - 상품 추천 기능 </br>
-4. 상품 리뷰 기능 </br>
-5. 비회원 </br>
-6. 스토어 </br>
-7. 검색
+---
+   |포지션|이름|담당|
+   |---|---|---|
+   |FRONT|이빛나| 메인페이지 / 제품상세페이지|
+   |FRONT|김준호|로그인 / footer|
+   |FRONT|소재현|nav bar / 제품상세페이지|
+   |BACK|류예린|장바구니 CRUD 구현|
+   |BACK|이상우|로그인 & 회원가입 구현|
+   |BACK|이상엽|사이트 페이지 구현|
 
-</aside>
+---
+- ## 프론트엔드
 
-<aside>
-🧭 **[Example]** 
-1. 자주 묻는 질문 구현하기 </br>
-2. 실제 결제 구현하기
+<img src="https://img.shields.io/badge/JavaScript-FFCA28?style=flat-square&logo=javascript&logoColor=white"/> <img src="https://img.shields.io/badge/React.js-58c3cc?style=flat-square&logo=React&logoColor=white"/> <img src="https://img.shields.io/badge/CRA-58c3cc?style=flat-square&logo=Create-React-App&logoColor=white"/> <img src="https://img.shields.io/badge/React Router Dom-gray?style=flat-square&logo=React-Router&logoColor=F6BB43"/> <img alt="SASS" src ="https://img.shields.io/badge/SASS-CC6699.svg?&style=flat-square&logo=Sass&logoColor=white"/> <img src="https://img.shields.io/badge/eslint-000066?style=flat-square&logo=eslint&logoColor=white"/> <img src="https://img.shields.io/badge/prettier-00CC00?style=flat-square&logo=eslint&logoColor=white"/>
+<br>
+- ## 백엔드
 
-</aside>
+<img src="https://img.shields.io/badge/JavaScript-FFCA28?style=flat-square&logo=javascript&logoColor=white"/> <img src="https://img.shields.io/badge/Node.js-008000?style=flat-square&logo=Node.js&logoColor=white"/> <img src="https://img.shields.io/badge/Express-000080?style=flat-square&logo=Express&logoColor=white"/> <img src="https://img.shields.io/badge/ MySQL8.0-6441a5?style=flat-square&logo=MySQL&logoColor=white"/> <img src="https://img.shields.io/badge/Postman-F6BB43?style=flat-square&logo=Postman&logoColor=white"/> <img src="https://img.shields.io/badge/JWT-F6BB43?style=flat-square&logo=JWT&logoColor=white"/> <img src="https://img.shields.io/badge/jest-F6BB43?style=flat-square&logo=jest&logoColor=white"/> <img src="https://img.shields.io/badge/aws(EC2)-F6BB43?style=flat-square&logo=amazonaws&logoColor=white"/> <img src="https://img.shields.io/badge/aws(vpc)-F6BB43?style=flat-square&logo=amazonaws&logoColor=white"/> <img src="https://img.shields.io/badge/aws(rds)-F6BB43?style=flat-square&logo=amazonaws&logoColor=white"/> <img src="https://img.shields.io/badge/docker-F6BB43?style=flat-square&logo=docker&logoColor=white"/> <img src="https://img.shields.io/badge/nginx-F6BB43?style=flat-square&logo=nginx&logoColor=white"/> <img src="https://img.shields.io/badge/CI/CD-F6BB43?style=flat-square&logo=CI/CD&logoColor=white"/>
+<br>
+- ## 협업 툴
 
-# 5. 개선 사항
+<img src="https://img.shields.io/badge/Notion-1c1c1c?style=flat-square&logo=Notion&logoColor=white"/> <img src="https://img.shields.io/badge/Slack-553830?style=flat-square&logo=Slack&logoColor=white"/> <img src="https://img.shields.io/badge/Trello-6441a5?style=flat-square&logo=Trello&logoColor=white"/>
 
--메인 페이지 그룹상품 가격을 각 상품들의 가격드를 불러와 합치는 방식으로 개선.
 
-### 현재 서비스에서 개선하고자 하는 점을 작성해주세요
+## FE 구현 기능
 
-<aside>
-👉 상품 좋아요 기능
+- [x] 유효성 검사를 통한 회원가입 및 로그인 구현
+- [x] 장바구니 추가, 수정, 조회, 삭제 기능 
+- [x] 슬라이드 네비게이션
+- [x] 상품 목록 페이지 필터링, 페이지네이션 
 
-</aside>
+### 성장 포인트
 
-<aside>
-🧭 **[Example]**
-1. 개별 작품 소개 페이지로 진입할 때, 로딩 이미지가 없어서 지루하다고 생각해서 로딩될 때를 알려주는 아이콘을 넣고 싶다. </br>
-2. 작품 찜하기를 상세 페이지에서만 할 수 있는데, 리스트에서도 할 수 있도록 만들고싶다. </br>
-3. 결제를 구현하기 어려우니, 유저가 가입하면 기본 포인트를 주고, 결제를 하면 포인트가 차감되는 형식으로 기획을 바꾸고 싶다.
-
+- 첫 프로젝트인 만큼 서버에서 넘어오는 데이터를 어떻게 UI에 뿌려줄지 고민하며 `map`함수와 `props`를 사용하여 서버와 데이터 통신을 해결해 가는 과정에서 겪은 시행착오 과정이 큰 경험이 되었습니다.
+- 장바구니 상품 담기, 삭제, 수량조절 구현하는 과정에서 블로커를 만났을때 팀원들과 즉각적으로 상황을 공유하고 함께 해결해 나가는 과정을 통해 협업 기술을 향상 시킬 수 있었습니다.
+- 프로젝트 완성을 위한 전체적인 플로우를 인지할 수 있게 되었습니다. 

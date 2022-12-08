@@ -1,5 +1,6 @@
 # 커머스 사이트 이솝을 모티브로한 팀 프로젝트
 
+## 배포 영상 : <a href="https://www.youtube.com/watch?v=n2kL24FnHsE">영상 바로가기</a>
 
 ---
 
